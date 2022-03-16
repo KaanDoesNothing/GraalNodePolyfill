@@ -73,4 +73,8 @@ export default new class os {
         
         return "Unknown";
     }
+
+    uptime(): number {
+        return 0;
+    }
 }
