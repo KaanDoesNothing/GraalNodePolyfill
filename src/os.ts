@@ -63,4 +63,14 @@ export default new class os {
     totalmem(): number {
         return Runtime.getRuntime().totalMemory();
     }
+
+    type(): string {
+        let name = System.getProperty("os.name").toLowerCase();
+
+        if(name.includes("windows")) return "Windows_NT";
+        if(name.includes("nix")) return "Linux";
+        if(name.includes("mac")) return "Darwin";
+        
+        return "Unknown";
+    }
 }
