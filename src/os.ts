@@ -59,4 +59,8 @@ export default new class os {
     tmpdir(): string {
         return System.getProperty("java.io.tmpdir");
     }
+
+    totalmem(): number {
+        return Runtime.getRuntime().totalMemory();
+    }
 }
