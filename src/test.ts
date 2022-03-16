@@ -1,3 +1,4 @@
 import {process} from "./index";
+import {os} from "./index";
 
-console.log(process.arch);
+console.log(`Process-Arch: ${process.arch}`);

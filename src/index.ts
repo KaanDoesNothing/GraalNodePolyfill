@@ -1,5 +1,7 @@
 import process from "./process";
+import os from "./os";
 
 export {
-    process
+    process,
+    os
 }
