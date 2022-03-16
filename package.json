@@ -6,7 +6,7 @@
   "author": "KaanDoesNothing <kaanyt123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "java -jar graaljs-interpreter-all.jar src/test.js",
+    "start": "java -jar graaljs-interpreter-all.jar ./dist/test.js",
     "build": "tsc --build",
     "watch": "tsc --watch"
   }
