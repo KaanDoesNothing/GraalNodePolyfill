@@ -51,4 +51,8 @@ export default new class os {
         
         return "unknown";
     }
+
+    release(): string {
+        return System.getProperty("os.version");
+    }
 }
