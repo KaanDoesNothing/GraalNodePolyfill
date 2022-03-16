@@ -39,7 +39,7 @@ export default new class os {
     }
 
     networkInterfaces(): [] {
-        return []
+        return [];
     }
 
     platform(): string {
