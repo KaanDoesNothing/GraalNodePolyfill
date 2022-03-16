@@ -1,6 +1,4 @@
-interface JavaInterface {
-    type: ((input: string) => any)
-}
+import { JavaInterface } from "./types";
 
 //@ts-ignore
 export let java: JavaInterface = Java;
