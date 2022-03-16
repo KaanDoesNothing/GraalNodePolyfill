@@ -55,4 +55,8 @@ export default new class os {
     release(): string {
         return System.getProperty("os.version");
     }
+
+    tmpdir(): string {
+        return System.getProperty("java.io.tmpdir");
+    }
 }
