@@ -33,4 +33,22 @@ export default new class os {
     hostname(): string {
         return InetAddress.getLocalHost().getHostName();
     }
+
+    loadavg(): string {
+        return "Not implemented";
+    }
+
+    networkInterfaces(): [] {
+        return []
+    }
+
+    platform(): string {
+        let name = System.getProperty("os.name").toLowerCase();
+
+        if(name.includes("windows")) return "win32";
+        if(name.includes("nix")) return "linux";
+        if(name.includes("mac")) return "darwin";
+        
+        return "unknown";
+    }
 }
