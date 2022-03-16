@@ -24,4 +24,8 @@ export default new class os {
     freemem(): number {
         return Runtime.getRuntime().freeMemory();
     }
+
+    homedir(): string {
+        return System.getProperty("user.home");
+    }
 }
