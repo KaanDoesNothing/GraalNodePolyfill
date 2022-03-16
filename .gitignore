@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+package-lock.json
+node_modules/
+graaljs-interpreter-all.jar
+*.js

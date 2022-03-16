@@ -1,0 +1,13 @@
+{
+  "name": "GraalNodePolyfill",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KaanDoesNothing/GraalNodePolyfill.git",
+  "author": "KaanDoesNothing <kaanyt123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "java -jar graaljs-interpreter-all.jar test.js",
+    "build": "tsc --build",
+    "watch": "tsc --watch"
+  }
+}
