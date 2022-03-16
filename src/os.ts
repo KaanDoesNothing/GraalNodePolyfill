@@ -77,4 +77,8 @@ export default new class os {
     uptime(): number {
         return 0;
     }
+
+    version(): string {
+        return System.getProperty("os.name");
+    }
 }
