@@ -3,6 +3,7 @@ import {java} from "./utils";
 const System = java.type("java.lang.System");
 const ByteOrder = java.type("java.nio.ByteOrder");
 const Runtime = java.type("java.lang.Runtime");
+const InetAddress = java.type("java.net.InetAddress");
 
 export default new class os {
     get EOL(): string {
@@ -27,5 +28,9 @@ export default new class os {
 
     homedir(): string {
         return System.getProperty("user.home");
+    }
+
+    hostname(): string {
+        return InetAddress.getLocalHost().getHostName();
     }
 }

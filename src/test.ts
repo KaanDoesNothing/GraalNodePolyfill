@@ -7,3 +7,4 @@ console.log(os.EOL);
 console.log(os.endianness());
 console.log(os.freemem());
 console.log(os.homedir());
+console.log(os.hostname());
